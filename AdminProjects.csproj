@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A7F1EC6-6D27-483F-96D1-9B9A25F88AD4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdminProjects</RootNamespace>
+    <AssemblyName>AdminProjects</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build.Engine" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="FormulariosWeb\AgregarIntegrantes.aspx" />
+    <Content Include="FormulariosWeb\AltaActividades.aspx" />
+    <Content Include="FormulariosWeb\AltaProyecto.aspx" />
+    <Content Include="FormulariosWeb\ListaEmpresarial.aspx" />
+    <Content Include="FormulariosWeb\SolicitudProyecto.aspx" />
+    <Content Include="Imagenes\addnew.png" />
+    <Content Include="Imagenes\agregar.png" />
+    <Content Include="Imagenes\agregarDato.png" />
+    <Content Include="Imagenes\agregar_Integrantes.png" />
+    <Content Include="Imagenes\cancel.png" />
+    <Content Include="Imagenes\delete.png" />
+    <Content Include="Imagenes\edit.png" />
+    <Content Include="Imagenes\eliminarDato.png" />
+    <Content Include="Imagenes\save.png" />
+    <Content Include="MisControles\UserControlArchivosPDF.ascx" />
+    <Content Include="paginaMaestra.Master" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FormulariosWeb\Index.aspx" />
+    <Content Include="FormulariosWeb\AltaCliente.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TareasPrincipales\ProcedimientosAltaActividades.cs" />
+    <Compile Include="TareasPrincipales\ProcedimientosAltaProyecto.cs" />
+    <Compile Include="TareasPrincipales\ProcedimientosCliente.cs" />
+    <Compile Include="TareasPrincipales\ProcedimientosProyecto.cs" />
+    <Compile Include="TareasPrincipales\ProcedimientoValidaciones.cs" />
+    <Compile Include="FormulariosWeb\AltaActividades.aspx.cs">
+      <DependentUpon>AltaActividades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormulariosWeb\AltaActividades.aspx.designer.cs">
+      <DependentUpon>AltaActividades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosWeb\AltaProyecto.aspx.cs">
+      <DependentUpon>AltaProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormulariosWeb\AltaProyecto.aspx.designer.cs">
+      <DependentUpon>AltaProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosWeb\ListaEmpresarial.aspx.cs">
+      <DependentUpon>ListaEmpresarial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormulariosWeb\ListaEmpresarial.aspx.designer.cs">
+      <DependentUpon>ListaEmpresarial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MisControles\UserControlArchivosPDF.ascx.cs">
+      <DependentUpon>UserControlArchivosPDF.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MisControles\UserControlArchivosPDF.ascx.designer.cs">
+      <DependentUpon>UserControlArchivosPDF.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TDAClases\ClaseCliente.cs" />
+    <Compile Include="TDAClases\ClaseIntegrante.cs" />
+    <Compile Include="TDAClases\ClaseProyecto.cs" />
+    <Compile Include="FormulariosWeb\AgregarIntegrantes.aspx.cs">
+      <DependentUpon>AgregarIntegrantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormulariosWeb\AgregarIntegrantes.aspx.designer.cs">
+      <DependentUpon>AgregarIntegrantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosWeb\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormulariosWeb\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosWeb\AltaCliente.aspx.cs">
+      <DependentUpon>AltaCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormulariosWeb\AltaCliente.aspx.designer.cs">
+      <DependentUpon>AltaCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosWeb\SolicitudProyecto.aspx.cs">
+      <DependentUpon>SolicitudProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormulariosWeb\SolicitudProyecto.aspx.designer.cs">
+      <DependentUpon>SolicitudProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClaseGeneral.cs" />
+    <Compile Include="paginaMaestra.Master.cs">
+      <DependentUpon>paginaMaestra.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginaMaestra.Master.designer.cs">
+      <DependentUpon>paginaMaestra.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>19118</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:19118/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
